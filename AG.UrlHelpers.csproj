@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AG.UrlHelpers</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>AGLogicStudio</Authors>
+    <Company>AGLogicStudio</Company>
+    <Description>Cleanly combines URL segments in .NET with proper slash, query, and anchor handling.</Description>
+    <PackageTags>url;combine;routing;path;normalize;uri;web;segments;aglogicstudio;utilities</PackageTags>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RepositoryUrl>https://github.com/AGLogicStudio/UrlHelpers</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/AGLogicStudio/UrlHelpers</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UrlHelpers.Tests\**" />
+    <EmbeddedResource Remove="UrlHelpers.Tests\**" />
+    <None Remove="UrlHelpers.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>
